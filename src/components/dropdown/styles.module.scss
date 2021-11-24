@@ -1,0 +1,35 @@
+@use '../../themes/colors';
+@use '../../themes/mixins';
+
+.container {
+    @include mixins.disable-scrollbar;
+    max-height: 172px;
+    overflow: auto;
+    background: colors.$dark;
+
+    button {
+        width: 100%;
+        text-align: left;
+        height: 36px;
+        margin: 0 0 4px;
+        border: 1px solid colors.$primary-dark;
+        color: colors.$primary-medium;
+        padding: 4px 12px 0;
+        border-radius: 4px;
+        font-size: 16px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &.selected{
+            background: colors.$primary !important;
+            color: #fff;
+        }
+
+        &.keyboardSelected {
+            background: colors.$primary !important;
+            color: #fff;
+        }
+    }
+}

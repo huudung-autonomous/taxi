@@ -1,0 +1,5 @@
+@use '../../themes/mixins';
+
+.container {
+    @include mixins.modal;
+}

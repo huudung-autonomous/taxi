@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background: #fff;
+
+    > h3{
+        font-weight: 500;
+        font-size: 22px;
+        margin: 0;
+        color: #166987;
+    }
+
+    .block{
+        margin: 34px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .image{
+            width: 66px;
+            height: 66px;
+            border-radius: 6px;
+            border: 2px solid #166987bd;
+            margin: 0 0 16px;
+            box-shadow: 0 0 4px #c7e1e9;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 76%;
+                display: block;
+            }
+        }
+
+        .label{
+            font-weight: 500;
+            color: #222222;
+            font-size: 19px;
+            margin: 0 0 4px;
+        }
+
+        .desc{
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+
+            > span{
+                font-weight: 500;
+                color: #166987;
+            }
+        }
+    }
+}

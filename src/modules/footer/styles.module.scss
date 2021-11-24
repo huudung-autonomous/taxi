@@ -1,0 +1,88 @@
+.container{
+    padding: 50px 10px 40px;
+    background: linear-gradient(to top, #2c6172, #176987);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+
+    .name{
+        font-size: 26px;
+        font-weight: 600;
+        margin: 0 12px 0 0;
+        letter-spacing: -1px;
+
+        > span{
+            &:nth-child(2){
+                color: #ffffff;
+            }
+        }
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 10px;
+        width: 100%;
+    }
+
+    .slogan{
+        font-size: 15px;
+        margin: 0;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+    }
+
+    .phone{
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5px 0 0;
+        text-align: center;
+
+        a{
+            color: #fff;
+            font-weight: 500;
+            display: inline-flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        img{
+            width: 18px;
+            transform: translateY(-3px);
+            display: block;
+            margin: 0 4px 0 0;
+            opacity: .95;
+            
+        }
+    }
+
+    .menu{
+        margin: 0 0 16px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        button{
+            text-decoration: underline;
+            background: 0;
+        }
+    }
+
+    .bookingContainer{
+        width: 100%;
+        background: #fff;
+        color: #166987;
+        border-radius: 6px;
+        margin: 20px 0 0;
+
+        > div{
+            padding: 24px 10px;
+        }
+    }
+}

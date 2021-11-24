@@ -1,0 +1,31 @@
+@use '../../themes/colors';
+
+@keyframes rotate-animation {
+    0%{
+        transform: rotateZ(0);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.container{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid colors.$primary;
+    position: relative;
+    display: inline-block;
+    animation: rotate-animation linear 1s infinite;
+
+    &::before{
+        content: '';
+        width: 60%;
+        height: 60%;
+        top: -3px;
+        left: -3px;
+        position: absolute;
+        background:#000;
+    }
+}

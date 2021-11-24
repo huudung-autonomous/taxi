@@ -1,0 +1,41 @@
+.container{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    position: relative;
+    width: 100%;
+
+    .trigger{
+        width: 100%;
+        padding-right: 20px;
+        height: 40px;
+        font-size: 16px;
+        padding: 2px 12px 0;
+        text-align: left;
+        position: relative;
+        border: 1px solid #fff;
+        font-weight: 400;
+
+        &::after{
+            content: '';
+            width: 10px;
+            height: 6px;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ffffff;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+        }
+    }
+
+    .dropdown{
+        position: absolute;
+        bottom: calc(100% + 8px);
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background: #ffffff;
+    }
+}

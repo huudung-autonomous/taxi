@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+
+    .label{
+        position: absolute;
+        left: 10px;
+        top: calc(50% + 2px);
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #ffffff;
+        display: inline-block;
+        z-index: 1;
+        padding: 2px 4px;
+        transition: top linear .15s, font-size linear .15s;
+    }
+
+    input{
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff;
+        width: 100%;
+        font-size: 15px;
+        padding: 14px 12px 8px;
+        border-radius: 6px;
+        position: relative;
+        z-index: 0;
+    }
+
+    &.focusing{
+        .label{
+            background: #176987;
+            top: 0;
+            font-size: 13px;
+        }
+    }
+}

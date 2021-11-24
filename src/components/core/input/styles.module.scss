@@ -1,0 +1,7 @@
+@use '../../../themes/colors';
+
+.container{
+    border: 1px solid colors.$primary-dark;
+    background: transparent;
+    color: #fff;
+}

@@ -1,0 +1,42 @@
+.container{
+    padding: 24px 12px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name{
+        font-size: 29px;
+        letter-spacing: -1px;
+        font-weight: 600;
+
+        > span{
+            &:nth-child(2){
+                color: #166987;
+            }
+        }
+    }
+
+    .slogan{
+        font-size: 14px;
+        margin: 6px 0 0;
+        font-weight: 500;
+
+        .phone{
+            color: #166987;
+            margin: 2px 0 0;
+            display: block;
+        }
+    }
+
+    > button{
+        padding: 12px 10px 10px;
+        transform: translateY(-7px);
+        font-size: 16px;
+    }
+}

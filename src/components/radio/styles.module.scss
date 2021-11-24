@@ -1,0 +1,28 @@
+@use '../../themes/colors';
+
+.container{
+    color: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    position: relative;
+    background: colors.$navy-drak-2;
+    border: 1px solid colors.$navy-light;
+
+    &.checked{
+        border-color: colors.$primary;
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background: colors.$primary;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

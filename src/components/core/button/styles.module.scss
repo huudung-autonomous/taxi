@@ -1,0 +1,29 @@
+@use '../../../themes/colors';
+
+.container{
+    border: 2px solid colors.$primary;
+    color: colors.$primary;
+    background: transparent;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+
+    &.primary {
+        background: colors.$primary !important;
+        color: colors.$dark !important;
+        border-color: colors.$primary !important;
+
+        &.disabled {
+            border-color: transparent !important;
+            background: colors.$primary-dark !important;
+            color: colors.$dark !important;
+        }
+    }
+
+    &.disabled {
+        color: colors.$primary-dark !important;
+        cursor: not-allowed;
+    }
+}

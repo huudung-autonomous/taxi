@@ -1,0 +1,42 @@
+@use '../../themes/colors';
+
+.container{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    position: relative;
+
+    button{
+        border-color: colors.$primary-dark;
+    }
+
+    .trigger{
+        width: 100%;
+        padding-right: 20px;
+        height: 30px;
+        text-align: left;
+        position: relative;
+
+        &::after{
+            content: '';
+            width: 10px;
+            height: 6px;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: colors.$primary-dark;
+            clip-path: polygon(50% 100%, 0 0, 100% 0);
+        }
+    }
+
+    .dropdown{
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background: colors.$dark;
+    }
+}

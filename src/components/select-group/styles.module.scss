@@ -1,0 +1,30 @@
+@use '../../themes/colors';
+
+.container{
+    margin: 0 0 20px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0 0 8px;
+        color: colors.$primary-medium;
+    }
+
+    .select{
+        width: 100%;
+
+        > button{
+            height: 36px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 4px;
+            padding: 4px 12px 0;
+            color: #fff;
+        }
+    }
+}

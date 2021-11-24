@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    background: #fff;
+
+    > h3{
+        font-weight: 500;
+        font-size: 22px;
+        margin: 0;
+        color: #166987;
+        margin: 0 0 30px;
+    }
+
+    .item{
+        width: 100%;
+        position: relative;
+        margin: 0 0 40px;
+
+        &:last-child{
+            margin: 0 0 0;
+        }
+
+        .image{
+            padding-top: 52%;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            border-radius: 4px;
+        }
+
+        .label{
+            font-size: 19px;
+            font-weight: 500;
+            margin: 16px 0 8px;
+            text-align: center;
+        }
+
+        > p{
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+
+            > span{
+                font-weight: 500;
+                color: #166987;
+            }
+        }
+    }
+}

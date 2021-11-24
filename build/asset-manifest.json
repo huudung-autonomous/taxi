@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "./static/css/main.06216e4e.chunk.css",
+    "main.js": "./static/js/main.d1eebcb9.chunk.js",
+    "main.js.map": "./static/js/main.d1eebcb9.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.2f1275f9.js",
+    "runtime-main.js.map": "./static/js/runtime-main.2f1275f9.js.map",
+    "static/js/2.c649e74e.chunk.js": "./static/js/2.c649e74e.chunk.js",
+    "static/js/2.c649e74e.chunk.js.map": "./static/js/2.c649e74e.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.06216e4e.chunk.css.map": "./static/css/main.06216e4e.chunk.css.map",
+    "static/js/2.c649e74e.chunk.js.LICENSE.txt": "./static/js/2.c649e74e.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "./static/media/Diavlo_MEDIUM.581642a8.otf",
+    "static/media/ads.c7489712.jpeg": "./static/media/ads.c7489712.jpeg",
+    "static/media/coach.99ee2b3d.jpeg": "./static/media/coach.99ee2b3d.jpeg",
+    "static/media/covid.7093103b.jpeg": "./static/media/covid.7093103b.jpeg",
+    "static/media/holiday.19b88e50.jpeg": "./static/media/holiday.19b88e50.jpeg",
+    "static/media/lincoln.a9d7a3a9.jpg": "./static/media/lincoln.a9d7a3a9.jpg",
+    "static/media/volvo.b86a630b.jpeg": "./static/media/volvo.b86a630b.jpeg",
+    "static/media/xe.3c67c44a.png": "./static/media/xe.3c67c44a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f1275f9.js",
+    "static/js/2.c649e74e.chunk.js",
+    "static/css/main.06216e4e.chunk.css",
+    "static/js/main.d1eebcb9.chunk.js"
+  ]
+}

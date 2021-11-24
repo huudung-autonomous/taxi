@@ -1,0 +1,187 @@
+@use "./colors";
+
+@mixin disable-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@mixin modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 20px 20px 40px;
+    z-index: 999;
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+        z-index: 1;
+        background: #000;
+        opacity: 0.8;
+        outline: 0;
+    }
+
+    .body {
+        position: relative;
+        z-index: 2;
+        background: #fff;
+        padding: 36px 20px 20px;
+        width: 100%;
+        max-width: 420px;
+        border-radius: 8px;
+        border: 0;
+        opacity: 0;
+        overflow: hidden;
+
+        &.showing {
+            opacity: 1;
+            padding: 0;
+            overflow: hidden;
+            transform: scaleY(0);
+            animation: open-animation linear 0.3s forwards;
+
+            > * {
+                opacity: 0;
+            }
+        }
+
+        &.hidding {
+            opacity: 1;
+            padding: 0;
+            overflow: hidden;
+            transform: scaleY(0);
+            animation: close-animation linear 0.3s forwards;
+
+            > * {
+                opacity: 0;
+            }
+        }
+
+        &.stay {
+            opacity: 1;
+        }
+
+        > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        > img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            height: 100%;
+            filter: grayscale(1);
+            opacity: .05;
+        }
+
+
+        .close {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            z-index: 2;
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            color: transparent !important;
+            border: 0;
+            transition: transform linear 0.25s;
+            background: #166987 !important;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                background: #fff;
+                top: 50%;
+                left: 50%;
+            }
+
+            &::before {
+                transform: translate(-50%, -50%) rotateZ(45deg);
+            }
+
+            &::after {
+                transform: translate(-50%, -50%) rotateZ(-45deg);
+            }
+
+            &:hover {
+                transform: rotateZ(90deg);
+            }
+        }
+
+        .title {
+            font-size: 24px;
+            color: #166987;
+            line-height: 32px;
+            word-break: break-word;
+            font-weight: 500;
+        }
+
+        .main {
+            padding: 20px 0 24px;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            button {
+                height: 32px;
+                padding: 4px 20px 0;
+                font-size: 16px;
+                border-radius: 4px;
+                margin: 0 0 0 12px;
+                transition: transform linear 0.2s;
+
+                &:first-child {
+                    margin: 0;
+                }
+
+                &:hover {
+                    transform: translate(0, -4px);
+                }
+            }
+        }
+    }
+}
+
+@keyframes open-animation {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes close-animation {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}

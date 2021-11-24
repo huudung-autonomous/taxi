@@ -1,0 +1,66 @@
+@use "../../themes/colors";
+
+.container {
+    margin: 0 0 26px;
+    border: 1px solid colors.$primary;
+    border-radius: 4px;
+    background: colors.$navy-drak-2;
+    padding: 12px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    label {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        color: colors.$navy-light;
+    }
+
+    input {
+        height: 36px;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 0 10px 2px;
+        border: 0;
+        font-size: 22px;
+        padding: 0;
+        height: 30px;
+        -moz-appearance: textfield;
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+        }
+
+        &:-ms-input-placeholder {
+            color: #fff;
+        }
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    .select {
+        width: 100%;
+
+        button {
+            height: 36px;
+            border-radius: 4px;
+            padding: 4px 12px 0;
+            font-size: 15px;
+        }
+
+        > div {
+            border-radius: 4px;
+        }
+    }
+}

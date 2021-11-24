@@ -1,0 +1,33 @@
+@use './themes/fonts';
+@use './themes/mixins';
+
+* {
+  box-sizing: border-box;
+  font-family: "Diavlo";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include mixins.disable-scrollbar;
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+  color: #222222;
+}
+
+input {
+  outline: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button {
+  outline: 0;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

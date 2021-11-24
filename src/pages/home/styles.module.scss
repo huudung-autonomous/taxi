@@ -1,0 +1,24 @@
+.container{
+    max-width: 480px;
+    min-height: 100vh;
+    margin: auto;
+    background: #fbf9f2;
+
+    .servicesReCall{
+        padding-top: 20px;
+
+        > h3{
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+
+    .pricingReCall{
+        padding-top: 20px;
+
+        > h3{
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+}

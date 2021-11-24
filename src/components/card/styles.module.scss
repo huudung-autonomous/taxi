@@ -1,0 +1,32 @@
+@use '../../themes/colors';
+
+.container {
+    position: relative;
+    z-index: 2;
+    background: colors.$navy-dark;
+    padding: 24px 24px 24px;
+    width: 100%;
+    border-radius: 10px;
+    display: inline-block;
+
+    .title {
+        font-size: 24px;
+        color: colors.$primary;
+        font-weight: 500;
+        font-family: Autonomous;
+        text-transform: uppercase;
+    }
+
+    .description {
+        font-size: 16px;
+        color: #fff;
+        margin: 10px 0 0;
+    }
+
+    .main {
+        margin: 20px 0 0;
+        color: colors.$primary-medium;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
